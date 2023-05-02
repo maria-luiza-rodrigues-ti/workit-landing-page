@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Fraunces 144pt';
+    src: url('assets/fonts/manrope/static/Manrope-Regular.tff') format('truetype');
+}
+
+$main-font: 'Manrope';
+$main-font-2: 'Fraunces 144pt';
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+$font-size-xxs: 10px;
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 22px;
+$font-size-g: 32px; 
+$font-size-xg: 56px;
+$font-size-tt: 80px;

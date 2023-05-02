@@ -1,0 +1,20 @@
+{
+  "name": "workit-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Workit landing page coding challenge](./preview.jpg)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "yarn": "^1.22.19"
+  },
+  "keywords": []
+}

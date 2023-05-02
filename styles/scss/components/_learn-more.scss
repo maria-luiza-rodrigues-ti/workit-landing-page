@@ -1,0 +1,48 @@
+.learn-more {
+    background: url(../../../assets/images/background-1.svg);
+    position: relative;
+    padding-bottom: 149px;
+}
+
+.logo-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 16px 64px;
+}
+
+.logo-button_button {
+    @include secondary-button;
+}
+
+.learn-more_info {
+    padding: 0 16px;
+}
+
+.learn-more_title {
+    text-align: center;
+    font-family: $main-font-2;
+    font-weight: $semi-bold;
+    font-size: 50px;
+    line-height: 1;
+    color: $white;
+    margin-bottom: 40px;
+
+    span {
+        border-bottom: 3px solid $eucaplyptus;
+    }
+}
+
+.learn-more_button {
+    @include primary-button;
+
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.learn-more_image {
+    width: 85.33%;
+    margin: 64px auto 0;
+    padding: 0 3px 0 16px;
+    position: absolute;
+}
