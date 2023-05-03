@@ -1,46 +1,122 @@
 .card {
-    margin-top: 100px;
-    padding: 0 16px;
-    min-height: 566px;
+  margin-top: 100px;
+  padding: 0 16px;
+  min-height: 559px;
+
+  @media (min-width: $t) {
+    padding: 0 40px;
+    min-height: 543px;
+  }
+
+  @media (min-width: $d) {
+    max-width: 1112px;
+    margin: 100px auto 0;
+    padding-bottom: 95px;
+  }
 }
 
 .card_image {
-    margin: 0 auto;
-    width: calc(100% - 62px);
-    display: block;
+  margin: 0 auto;
+  width: calc(100% - 62px);
+  display: block;
+  max-width: 281px;
+
+  @media (min-width: $t) {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 474px;
+    width: 40.844%;
+  }
 }
 
 .card_description {
-    margin-top: -53px;
-    padding: 32px 31px;
-    background: $dark-purple;
-    position: absolute;
-    width: calc(100% - 94px);
+  margin-top: -53px;
+  padding: 32px 31px;
+  background: $dark-purple;
+  position: absolute;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+
+  @media (min-width: $t) {
+    width: 65.097%;
+    right: 40px;
+  }
+
+  @media (min-width: $d) {
+    max-width: 730px;
+    left: 547px;
+    transform: translateY(-222px);
+    padding: 64px;
+  }
 }
 
 .card_title {
-    font-family: $main-font-2;
-    font-weight: $semi-bold;
-    font-style: normal;
-    font-size: $font-size-g;
-    line-height: 1.25;
-    color: $white;
-    text-align: center;
-    margin-bottom: 16px;
+  font-family: $main-font-2;
+  font-weight: $semi-bold;
+  font-style: normal;
+  font-size: $font-size-g;
+  line-height: 1.25;
+  color: $white;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media (min-width: $t) {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $d) {
+    font-size: 56px;
+  }
 }
 
 .card_text {
-    font-family: $main-font;
-    line-height: 1.375;
-    text-align: center;
-    color: $white;
-    margin-bottom: 24px;
+  font-family: $main-font;
+  line-height: 1.375;
+  text-align: center;
+  color: $white;
+  margin-bottom: 24px;
+
+  @media (min-width: $t) {
+    text-align: left;
+  }
+
+  @media (min-width: $d) {
+    font-size: $font-size-l;
+    margin-bottom: 32px;
+  }
+}
+
+.card_bottom {
+  display: flex;
+  position: relative;
 }
 
 .card_button {
-    @include primary-button;
+  @include primary-button;
 
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  height: 100%;
+
+  @media (min-width: $t) {
+    margin-left: 0;
+    position: relative;
+  }
+
+  @media (min-width: $d) {
+    font-size: $font-size-l;
+  }
+}
+
+.card_espiral {
+  display: none;
+
+  @media (min-width: $t) {
     display: flex;
-    width: max-content;
-    margin: 0 auto;
+    position: absolute;
+    right: -31px;
+  }
 }

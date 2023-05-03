@@ -1,38 +1,38 @@
 @import "colors";
 
 @mixin primary-button {
-    background-color:  $eucaplyptus;
-    border: 1px solid $eucaplyptus;
-    padding: 13px 25px 16px;
+  background-color: $eucaplyptus;
+  border: 1px solid $eucaplyptus;
+  padding: 11px 25px 11px;
 
-    font-family: $main-font;
-    font-weight: $bold;
-    text-decoration: none;
-    text-align: center;
-    color: $dark-purple;
-    line-height: 2;
-    letter-spacing: -0.16px;
+  font-family: $main-font;
+  font-weight: $bold;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-purple;
+  line-height: 2;
+  letter-spacing: -0.16px;
 
-    &:hover {
-        background-color: transparent;
-        color: $eucaplyptus;
-        transition: all .3s;
-    }
+  &:hover {
+    background-color: transparent;
+    color: $eucaplyptus;
+    transition: all 0.3s;
+  }
 }
 
 @mixin secondary-button {
-    background-color:  transparent;
-    border-bottom: 3px solid $eucaplyptus;
+  background-color: transparent;
+  border-bottom: 3px solid $eucaplyptus;
 
-    font-family: $main-font;
-    font-weight: $medium;
-    text-align: center;
-    color: $white;
-    line-height: 2;
-    text-decoration: none;
+  font-family: $main-font;
+  font-weight: $medium;
+  text-align: center;
+  color: $white;
+  line-height: 2;
+  text-decoration: none;
 
-    &:hover {
-        color: $eucaplyptus;
-        transition: all .3s;
-    }
+  &:hover {
+    color: $eucaplyptus;
+    transition: all 0.3s;
+  }
 }

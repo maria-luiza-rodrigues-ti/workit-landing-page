@@ -1,24 +1,32 @@
 .learn-more {
-    background: url(../../../assets/images/background-1.svg);
-    position: relative;
-    padding-bottom: 149px;
-}
+  background-image: url(../../../assets/images/background-1.svg);
+  position: relative;
+  padding-bottom: 168px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 
-.logo-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 16px 64px;
-}
+  @media (min-width: $t) {
+    background-image: url(../../../assets/images/background-1-tablet.svg);
+    padding-bottom: 216px;
+  }
 
-.logo-button_button {
-    @include secondary-button;
-}
+  @media (min-width: $d) {
+    background-image: url(../../../assets/images/background-1-desktop.svg);
+    padding-bottom: 0px;
+  }
 
-.learn-more_info {
+  &_info {
     padding: 0 16px;
-}
 
-.learn-more_title {
+    @media (min-width: $d) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &_title {
     text-align: center;
     font-family: $main-font-2;
     font-weight: $semi-bold;
@@ -28,21 +36,67 @@
     margin-bottom: 40px;
 
     span {
-        border-bottom: 3px solid $eucaplyptus;
+      border-bottom: 3px solid $eucaplyptus;
     }
-}
 
-.learn-more_button {
+    @media (min-width: $t) {
+      max-width: 437px;
+      margin: 0 auto 40px;
+    }
+
+    @media (min-width: $d) {
+      max-width: 650px;
+      font-size: 80px;
+      margin: 0 auto 37px;
+    }
+  }
+
+  &_button {
     @include primary-button;
 
     display: block;
     width: max-content;
     margin: 0 auto;
-}
 
-.learn-more_image {
+    @media (min-width: $d) {
+      font-size: $font-size-l;
+    }
+  }
+
+  &_image {
     width: 85.33%;
     margin: 64px auto 0;
     padding: 0 3px 0 16px;
     position: absolute;
+
+    @media (min-width: $t) {
+      margin-top: 55px;
+      padding: 0 87px 0 135px;
+      width: 67.35%;
+    }
+
+    @media (min-width: $d) {
+      max-width: 767px;
+      position: relative;
+      margin-top: 50px;
+    }
+  }
+}
+
+.logo-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 16px 64px;
+
+  @media (min-width: $t) {
+    padding: 32px 40px 56px;
+  }
+
+  @media (min-width: $t) {
+    padding: 56px 165px 55px;
+  }
+
+  &_button {
+    @include secondary-button;
+  }
 }
