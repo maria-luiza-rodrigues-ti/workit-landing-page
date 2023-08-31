@@ -18,8 +18,6 @@ function compilaSass() {
     .pipe(browserSync.stream());
 }
 
-gulp.task("sass", compilaSass);
-
 function browser() {
   browserSync.init({
     server: {
@@ -28,12 +26,13 @@ function browser() {
   });
 }
 
-gulp.task("browser-sync", browser);
-
 function watch() {
   gulp.watch("styles/scss/**/*.scss", compilaSass);
   gulp.watch("*.html").on("change", browserSync.reload);
 }
 
-gulp.task("watch", watch);
-gulp.task("default", gulp.parallel("watch", "browser-sync"));
+exports.compilaSass = compilaSass;
+exports.browser = browser;
+exports.watch = watch;
+
+gulp.task("default", gulp.parallel(compilaSass, browser, watch));
